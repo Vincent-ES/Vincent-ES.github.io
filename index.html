@@ -1,1 +1,127 @@
-<!doctype html><title>Vincent</title><h1>Hello from Vincent-ES</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vincent Chen | NCKU ES</title>
+    <meta name="description" content="Vincent Chen – Engineering Science (ES) student at NCKU." />
+    <link rel="icon" href="https://fav.farm/📄" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #111827; /* gray-900 */
+        --muted: #4b5563; /* gray-600 */
+        --rule: #e5e7eb; /* gray-200 */
+        --link: #2563eb; /* blue-600 */
+        --link-hover: #1d4ed8; /* blue-700 */
+        --nav: #1f2937; /* gray-800 */
+        --navfg: #e5e7eb; /* gray-200 */
+        --maxw: 64rem; /* 1024px */
+      }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { color: var(--link-hover); text-decoration: underline; }
+      .container { max-width: var(--maxw); margin: 0 auto; padding: 0 1rem; }
+
+      /* Top nav like the screenshot */
+      .nav { position: sticky; top: 0; z-index: 10; background: var(--nav); color: var(--navfg); box-shadow: inset 0 -1px 0 rgba(255,255,255,.05); }
+      .nav-inner { display: flex; align-items: center; gap: 1.25rem; height: 52px; }
+      .nav .brand { font-weight: 600; letter-spacing: .2px; margin-right: .5rem; }
+      .nav a { color: var(--navfg); opacity: .95; }
+      .nav a:hover { opacity: 1; text-decoration: none; }
+      .nav-links { display: flex; gap: 1.25rem; font-size: 15px; }
+
+      /* Header block (image + name + meta list) */
+      main { padding: 1.25rem 0 3rem; }
+      .header { display: grid; grid-template-columns: 240px 1fr; gap: 1.25rem; align-items: start; margin-top: 1rem; }
+      .avatar { width: 240px; height: 240px; object-fit: cover; border-radius: 4px; }
+      h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; font-weight: 700; }
+      .meta { margin: .25rem 0 1rem; color: var(--muted); }
+      .kv { margin: .35rem 0; }
+      .kv b { display: inline-block; width: 110px; color: #111827; }
+
+      /* Body text */
+      p { margin: .75rem 0; }
+      h2 { font-size: 1.5rem; margin: 2rem 0 .5rem; font-weight: 700; }
+      .subtle { color: var(--muted); }
+      .rule { height: 1px; background: var(--rule); margin: 1.25rem 0; }
+
+      ul { margin: .25rem 0 .75rem 1.25rem; }
+      li { margin: .3rem 0; }
+
+      @media (max-width: 800px) {
+        .header { grid-template-columns: 1fr; }
+        .avatar { width: 180px; height: 180px; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#">Vincent Chen</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#open-source">Open-Source</a>
+          <a href="#group">Group</a>
+          <a href="#scholar">Google Scholar</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- Header block (image + name + meta), like screenshot -->
+      <section id="about" class="header">
+        <img class="avatar" src="Cat.png" alt="Portrait of Vincent Chen's cat" />
+        <div>
+          <h1>Vincent Chen</h1>
+          <div class="meta">National Cheng Kung University (NCKU)</div>
+
+          <!-- Key-value lines (kept minimal per your earlier request; add your real info anytime) -->
+          <div class="kv"><b>Major:</b> Engineering Science (ES), B.S.</div>
+          <div class="kv"><b>Interests:</b> Competitive Programming, Running, Swimming, Fitness, Investment, Physics, Math.</div>
+        </div>
+      </section>
+
+      <div class="rule"></div>
+
+      <!-- Intro paragraphs -->
+      <section>
+        <p>I am an undergraduate student in the <a href="https://www.es.ncku.edu.tw/">Department of Engineering Science</a> at <a href="https://www.ncku.edu.tw/">National Cheng Kung University</a>. I enjoy building systems and solving problems across algorithms, optimization, and computing.</p>
+        <p>Currently, I am exploring topics in competitive programming and practical systems projects. I also have strong interests in investment, physics, and mathematics.</p>
+      </section>
+
+      <h2 id="research">Research</h2>
+      <p>I am interested in the intersection of machine learning and systems. I like to think end‑to‑end from models and runtimes down to low‑level optimizations to solve real‑world problems efficiently.</p>
+
+      <p class="subtle">I am a believer of open source and open science. Below are systems I follow or contribute to:</p>
+      <ul>
+        <li><a href="#">MLC‑LLM</a> — Universal LLM deployment engine with ML compilation.</li>
+        <li><a href="#">Apache TVM</a> — End‑to‑end optimizing compiler for deep learning.</li>
+        <li><a href="#">XGBoost</a> — Scalable tree boosting system.</li>
+        <li><a href="#">Apache MXNet</a> — Deep learning framework.</li>
+      </ul>
+
+      <!-- Placeholder anchors to match nav labels -->
+      <h2 id="open-source">Open‑Source</h2>
+      <p class="subtle">Selected projects and notes will go here.</p>
+
+      <h2 id="group">Group</h2>
+      <p class="subtle">Clubs, study groups, or collaborators.</p>
+
+      <h2 id="scholar">Google Scholar</h2>
+      <p class="subtle">Add your Scholar link here when ready.</p>
+
+      <footer class="subtle" style="margin-top:2rem; padding:1rem 0; border-top:1px solid var(--rule);">
+        Last updated: <span id="updated"></span> · © <span id="year"></span> Vincent Chen
+      </footer>
+    </main>
+
+    <script>
+      const d = new Date();
+      document.getElementById('year').textContent = d.getFullYear();
+      document.getElementById('updated').textContent = d.toISOString().slice(0,10);
+    </script>
+  </body>
+</html>
