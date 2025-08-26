@@ -23,7 +23,6 @@
       a:hover { color: var(--link-hover); text-decoration: underline; }
       .container { max-width: var(--maxw); margin: 0 auto; padding: 0 1rem; }
 
-      /* Top nav like the screenshot */
       .nav { position: sticky; top: 0; z-index: 10; background: var(--nav); color: var(--navfg); box-shadow: inset 0 -1px 0 rgba(255,255,255,.05); }
       .nav-inner { display: flex; align-items: center; gap: 1.25rem; height: 52px; }
       .nav .brand { font-weight: 600; letter-spacing: .2px; margin-right: .5rem; }
@@ -31,23 +30,19 @@
       .nav a:hover { opacity: 1; text-decoration: none; }
       .nav-links { display: flex; gap: 1.25rem; font-size: 15px; }
 
-      /* Header block (image + name + meta list) */
       main { padding: 1.25rem 0 3rem; }
       .header { display: grid; grid-template-columns: 240px 1fr; gap: 1.25rem; align-items: start; margin-top: 1rem; }
       .avatar { width: 240px; height: 240px; object-fit: cover; border-radius: 4px; }
       h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; font-weight: 700; }
       .meta { margin: .25rem 0 1rem; color: var(--muted); }
-      .kv { margin: .35rem 0; }
-      .kv b { display: inline-block; width: 110px; color: #111827; }
+      .kv { margin: .35rem 0; display: flex; align-items: flex-start; }
+      .kv b { display: inline-block; width: 110px; color: #111827; flex-shrink: 0; }
+      .kv span { display: inline-block; }
 
-      /* Body text */
       p { margin: .75rem 0; }
       h2 { font-size: 1.5rem; margin: 2rem 0 .5rem; font-weight: 700; }
       .subtle { color: var(--muted); }
       .rule { height: 1px; background: var(--rule); margin: 1.25rem 0; }
-
-      ul { margin: .25rem 0 .75rem 1.25rem; }
-      li { margin: .3rem 0; }
 
       @media (max-width: 800px) {
         .header { grid-template-columns: 1fr; }
@@ -56,62 +51,49 @@
     </style>
   </head>
   <body>
-    <!-- Top navigation -->
     <nav class="nav">
       <div class="container nav-inner">
-        <a class="brand" href="#">Vincent Chen</a>
+        <a class="brand" href="https://vincent-es.github.io/" target="_blank">Vincent Chen</a>
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#open-source">Open-Source</a>
-          <a href="#group">Group</a>
-          <a href="#scholar">Google Scholar</a>
+          <a href="#blank1">Doing</a>
+          <a href="#blank2">Blank_2</a>
+          <a href="#blank3">Blank_3</a>
+          <a href="#blank4">Blank_4</a>
         </div>
       </div>
     </nav>
 
     <main class="container">
-      <!-- Header block (image + name + meta), like screenshot -->
       <section id="about" class="header">
         <img class="avatar" src="Cat.png" alt="Portrait of Vincent Chen's cat" />
         <div>
           <h1>Vincent Chen</h1>
-          <div class="meta">National Cheng Kung University (NCKU)</div>
-
-          <!-- Key-value lines (kept minimal per your earlier request; add your real info anytime) -->
-          <div class="kv"><b>Major:</b> Engineering Science (ES), B.S.</div>
-          <div class="kv"><b>Interests:</b> Competitive Programming, Running, Swimming, Fitness, Investment, Physics, Math.</div>
+          <div class="meta"><a href="https://web.ncku.edu.tw/" target="_blank">National Cheng Kung University (NCKU)</a></div>
+          <div class="kv"><b>Education:</b> <span>Engineering Science (ES), B.S. (2025–Now)</span></div>
+          <div class="kv"><b>Interests:</b> <span>Competitive Programming, Running, Swimming, Fitness, Investment, Physics, Math.</span></div>
+          <div class="kv"><b>GitHub:</b> <a href="https://github.com/Vincent-ES" target="_blank">Vincent-ES</a></div>
+          <div class="kv"><b>Email:</b> <span>e94141185 at gs dot ncku dot edu dot tw</span></div>
         </div>
       </section>
 
       <div class="rule"></div>
 
-      <!-- Intro paragraphs -->
       <section>
-        <p>I am an undergraduate student in the <a href="https://www.es.ncku.edu.tw/">Department of Engineering Science</a> at <a href="https://www.ncku.edu.tw/">National Cheng Kung University</a>. I enjoy building systems and solving problems across algorithms, optimization, and computing.</p>
-        <p>Currently, I am exploring topics in competitive programming and practical systems projects. I also have strong interests in investment, physics, and mathematics.</p>
+        <p>I am an undergraduate student in the Department of Engineering Science at NCKU. While building my foundation in science and engineering, I am still exploring my academic direction, deciding whether to specialize in mechanical, computer, or electrical engineering.</p>
+        <p>Beyond coursework, I enjoy tackling challenges in competitive programming and systems projects, and I also have strong interests in investment, physics, and mathematics.</p>
       </section>
 
-      <h2 id="research">Research</h2>
-      <p>I am interested in the intersection of machine learning and systems. I like to think end‑to‑end from models and runtimes down to low‑level optimizations to solve real‑world problems efficiently.</p>
+      <h2 id="blank1">Doing</h2>
+      <p class="subtle">Content for Doing will go here.</p>
 
-      <p class="subtle">I am a believer of open source and open science. Below are systems I follow or contribute to:</p>
-      <ul>
-        <li><a href="#">MLC‑LLM</a> — Universal LLM deployment engine with ML compilation.</li>
-        <li><a href="#">Apache TVM</a> — End‑to‑end optimizing compiler for deep learning.</li>
-        <li><a href="#">XGBoost</a> — Scalable tree boosting system.</li>
-        <li><a href="#">Apache MXNet</a> — Deep learning framework.</li>
-      </ul>
+      <h2 id="blank2">Blank_2</h2>
+      <p class="subtle">Content for Blank_2 will go here.</p>
 
-      <!-- Placeholder anchors to match nav labels -->
-      <h2 id="open-source">Open‑Source</h2>
-      <p class="subtle">Selected projects and notes will go here.</p>
+      <h2 id="blank3">Blank_3</h2>
+      <p class="subtle">Content for Blank_3 will go here.</p>
 
-      <h2 id="group">Group</h2>
-      <p class="subtle">Clubs, study groups, or collaborators.</p>
-
-      <h2 id="scholar">Google Scholar</h2>
-      <p class="subtle">Add your Scholar link here when ready.</p>
+      <h2 id="blank4">Blank_4</h2>
+      <p class="subtle">Content for Blank_4 will go here.</p>
 
       <footer class="subtle" style="margin-top:2rem; padding:1rem 0; border-top:1px solid var(--rule);">
         Last updated: <span id="updated"></span> · © <span id="year"></span> Vincent Chen
